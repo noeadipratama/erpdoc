@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Edit an RFQ &#8212; eSourcing 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="List all Vendor List" href="vendor.html" />
+    <link rel="prev" title="Create an RFQ" href="rfq_post.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="vendor.html" title="List all Vendor List"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="rfq_post.html" title="Create an RFQ"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="edit-an-rfq">
+<h1>Edit an RFQ<a class="headerlink" href="#edit-an-rfq" title="Permalink to this headline">¶</a></h1>
+<p>To edit an existing RFQ on your account send a <code class="xref py py-class docutils literal"><span class="pre">PUT</span></code> request to <code class="xref py py-class docutils literal"><span class="pre">/v1/rfqs</span></code>.</p>
+<p>CURL EXAMPLE</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">POST</span> <span class="o">-</span><span class="nx">H</span> <span class="s2">&quot;Content-Type: application/application/x-www-form-urlencoded&quot;</span> <span class="o">-</span><span class="nx">H</span> <span class="s2">&quot;Authorization: Bearer 12d3ee8b78ea8d4d09175ebf65c25584d7b269b2&quot;</span> <span class="s2">&quot;http://indoproc.com/esourcing/v1/rfqs/$id&quot;</span> <span class="o">-</span><span class="nx">D</span> <span class="s2">&quot;$REQUEST_BODY&quot;</span>
+</pre></div>
+</td></tr></table></div>
+<p>$id is a parameter that should be filled by RFQ ID.</p>
+<p>REQUEST HEADERS</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span> <span class="nx">application</span><span class="o">/</span><span class="nx">x</span><span class="o">-</span><span class="nx">www</span><span class="o">-</span><span class="nx">form</span><span class="o">-</span><span class="nx">urlencoded</span>
+<span class="nx">Authorization</span><span class="o">:</span> <span class="nx">Bearer</span> <span class="mi">12</span><span class="nx">d3ee8b78ea8d4d09175ebf65c25584d7b269b2</span>
+</pre></div>
+</td></tr></table></div>
+<p>REQUEST BODY</p>
+<p>These are the attributes that can be added to the array of request body:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>title</td>
+<td>string</td>
+<td>RFQ title</td>
+</tr>
+<tr class="row-odd"><td>due_date</td>
+<td>string</td>
+<td>the due date of RFQ in a string type; contains Unix Time Stamp (miliseconds since Jan 01 1970 in UTC)</td>
+</tr>
+<tr class="row-even"><td>required_date</td>
+<td>string</td>
+<td>the required date of RFQ items in a string type; contains Unix Time Stamp (miliseconds since Jan 01 1970 in UTC)</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>string</td>
+<td>An optional free-form text field to describe the RFQ</td>
+</tr>
+</tbody>
+</table>
+<p>These are the sample of Request Body:</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;Lorem Ipsum&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;due_date&quot;</span><span class="o">:</span> <span class="s2">&quot;1500632385539&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;required_date&quot;</span><span class="o">:</span> <span class="s2">&quot;1501237194007&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;Lorem Ipsum Dolor Sit Amet&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>RESPONSE HEADERS</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">content</span><span class="o">-</span><span class="nx">type</span><span class="o">:</span> <span class="nx">application</span><span class="o">/</span><span class="nx">json</span><span class="p">;</span> <span class="nx">charset</span><span class="o">=</span><span class="nx">utf</span><span class="o">-</span><span class="mi">8</span>
+<span class="nx">status</span><span class="o">:</span> <span class="mi">201</span> <span class="nx">Created</span>
+</pre></div>
+</td></tr></table></div>
+<p>RESPONSE BODY</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>_id</td>
+<td>integer</td>
+<td>The unique identifier for the RFQ, you can use this attribute to retrieve the RFQ list by sending <code class="xref py py-class docutils literal"><span class="pre">GET</span></code> request</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;rfq&quot;</span><span class="o">:</span> <span class="p">{</span>
+         <span class="s2">&quot;_id&quot;</span><span class="o">:</span> <span class="mi">1</span>
+     <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="rfq_post.html"
+                        title="previous chapter">Create an RFQ</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="vendor.html"
+                        title="next chapter">List all Vendor List</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Apis/rfq_put.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="vendor.html" title="List all Vendor List"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="rfq_post.html" title="Create an RFQ"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Indoproc Dev Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

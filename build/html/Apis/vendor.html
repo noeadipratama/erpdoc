@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>List all Vendor List &#8212; eSourcing 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Get List of Vendor by Category" href="vendor_category.html" />
+    <link rel="prev" title="Edit an RFQ" href="rfq_put.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="vendor_category.html" title="Get List of Vendor by Category"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="rfq_put.html" title="Edit an RFQ"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="list-all-vendor-list">
+<h1>List all Vendor List<a class="headerlink" href="#list-all-vendor-list" title="Permalink to this headline">¶</a></h1>
+<p>To list all of the vendor on your account send a <code class="xref py py-class docutils literal"><span class="pre">GET</span></code> request to <code class="xref py py-class docutils literal"><span class="pre">/v1/vendors</span></code>.</p>
+<p>CURL EXAMPLE</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">GET</span> <span class="o">-</span><span class="nx">H</span> <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="o">-</span><span class="nx">H</span> <span class="s2">&quot;Authorization: Bearer 12d3ee8b78ea8d4d09175ebf65c25584d7b269b2&quot;</span> <span class="s2">&quot;https://indoproc.com/esourcing/v1/vendors/&quot;</span>
+</pre></div>
+</td></tr></table></div>
+<p>REQUEST HEADERS</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span> <span class="nx">application</span><span class="o">/</span><span class="nx">x</span><span class="o">-</span><span class="nx">www</span><span class="o">-</span><span class="nx">form</span><span class="o">-</span><span class="nx">urlencoded</span>
+<span class="nx">Authorization</span><span class="o">:</span> <span class="nx">Bearer</span> <span class="mi">12</span><span class="nx">d3ee8b78ea8d4d09175ebf65c25584d7b269b2</span>
+</pre></div>
+</td></tr></table></div>
+<p>The response will be a JSON object with a key called <code class="xref py py-class docutils literal"><span class="pre">vendors</span></code>. This will be set to an array of vendor objects, each of which will contain the standard vendor attributes.</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>_id</td>
+<td>Integer</td>
+<td>Unique identifier for the Vendor.</td>
+</tr>
+<tr class="row-odd"><td>sup_name</td>
+<td>string</td>
+<td>String that contains company name of vendor</td>
+</tr>
+<tr class="row-even"><td>sup_type</td>
+<td>string</td>
+<td>String that contains company type of vendor</td>
+</tr>
+<tr class="row-odd"><td>contact_person</td>
+<td>string</td>
+<td>String that contains a person name that you should contact for this vendor</td>
+</tr>
+<tr class="row-even"><td>sup_email</td>
+<td>string</td>
+<td>String that contains an email of contact for this vendor</td>
+</tr>
+<tr class="row-odd"><td>sup_phone</td>
+<td>string</td>
+<td>String that contains a phone of contact for this vendor</td>
+</tr>
+<tr class="row-even"><td>categories</td>
+<td>Array</td>
+<td>An array that contains all categories for this vendor</td>
+</tr>
+<tr class="row-odd"><td>comp_srl</td>
+<td>String</td>
+<td>The unique identifier for the creator company</td>
+</tr>
+<tr class="row-even"><td>links</td>
+<td>Object</td>
+<td>Object that contains link from next and last url of vendor data</td>
+</tr>
+<tr class="row-odd"><td>meta</td>
+<td>Object</td>
+<td>Object that contains count of vendors data in your account</td>
+</tr>
+</tbody>
+</table>
+<p>RESPONSE HEADERS</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">content</span><span class="o">-</span><span class="nx">type</span><span class="o">:</span> <span class="nx">application</span><span class="o">/</span><span class="nx">json</span><span class="p">;</span> <span class="nx">charset</span><span class="o">=</span><span class="nx">utf</span><span class="o">-</span><span class="mi">8</span>
+<span class="nx">status</span><span class="o">:</span> <span class="mi">200</span> <span class="nx">OK</span>
+</pre></div>
+</td></tr></table></div>
+<p>RESPONSE BODY</p>
+<div class="highlight-js"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="p">{</span>
+             <span class="s2">&quot;vendors&quot;</span><span class="o">:</span> <span class="p">[</span>
+         <span class="p">{</span>
+             <span class="s2">&quot;_id&quot;</span><span class="o">:</span> <span class="mi">27</span><span class="p">,</span>
+             <span class="s2">&quot;sup_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Antavalue Building Construction&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;sup_type&quot;</span><span class="o">:</span> <span class="s2">&quot;PT&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;contact_person&quot;</span><span class="o">:</span> <span class="s2">&quot;Samuel&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;sup_email&quot;</span><span class="o">:</span> <span class="s2">&quot;samuel@antavalue.com&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;sup_phone&quot;</span><span class="o">:</span> <span class="s2">&quot;0923-0999-0293&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;categories&quot;</span><span class="o">:</span> <span class="p">{</span>
+                 <span class="s2">&quot;0&quot;</span><span class="o">:</span> <span class="s2">&quot;Industrial &amp; Tools&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;1&quot;</span><span class="o">:</span> <span class="s2">&quot;Building &amp; Construction&quot;</span>
+             <span class="p">},</span>
+             <span class="s2">&quot;comp_srl&quot;</span><span class="o">:</span> <span class="s2">&quot;8&quot;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+             <span class="s2">&quot;_id&quot;</span><span class="o">:</span> <span class="mi">28</span><span class="p">,</span>
+             <span class="s2">&quot;sup_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Klondike Valueline&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;sup_type&quot;</span><span class="o">:</span> <span class="s2">&quot;PT&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;contact_person&quot;</span><span class="o">:</span> <span class="s2">&quot;Akhmad&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;sup_email&quot;</span><span class="o">:</span> <span class="s2">&quot;akhmad90@klondikeval.com&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;sup_phone&quot;</span><span class="o">:</span> <span class="s2">&quot;0988-3321-5232&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;categories&quot;</span><span class="o">:</span> <span class="p">{</span>
+                 <span class="s2">&quot;0&quot;</span><span class="o">:</span> <span class="s2">&quot;Custom Printing&quot;</span>
+             <span class="p">},</span>
+             <span class="s2">&quot;comp_srl&quot;</span><span class="o">:</span> <span class="s2">&quot;8&quot;</span>
+         <span class="p">}</span>
+     <span class="p">],</span>
+     <span class="s2">&quot;links&quot;</span><span class="o">:</span> <span class="p">{</span>
+         <span class="s2">&quot;next&quot;</span><span class="o">:</span> <span class="s2">&quot;http://etender.bernard.indoproc.xyz/v1/vendors?page=2&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;last&quot;</span><span class="o">:</span> <span class="s2">&quot;http://etender.bernard.indoproc.xyz/v1/vendors?page=2&quot;</span>
+     <span class="p">},</span>
+     <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+         <span class="s2">&quot;total&quot;</span><span class="o">:</span> <span class="mi">25</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="rfq_put.html"
+                        title="previous chapter">Edit an RFQ</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="vendor_category.html"
+                        title="next chapter">Get List of Vendor by Category</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Apis/vendor.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="vendor_category.html" title="Get List of Vendor by Category"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="rfq_put.html" title="Edit an RFQ"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Indoproc Dev Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

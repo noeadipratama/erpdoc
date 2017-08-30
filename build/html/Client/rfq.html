@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>RFQ (Request For Quotation) &#8212; eSourcing 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Pin an RFQ into Dashboard" href="pin-rfq.html" />
+    <link rel="prev" title="Supplier List" href="supplier_list.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pin-rfq.html" title="Pin an RFQ into Dashboard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="supplier_list.html" title="Supplier List"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rfq-request-for-quotation">
+<span id="rfq"></span><h1>RFQ (Request For Quotation)<a class="headerlink" href="#rfq-request-for-quotation" title="Permalink to this headline">¶</a></h1>
+<p>Request for Quotation (RFQ) page can be accessed when you have client privilege.</p>
+<a class="reference internal image-reference" href="../_images/clientrfq.png"><img alt="Login Section" src="../_images/clientrfq.png" style="width: 800px;" /></a>
+<div class="section" id="create-a-rfq">
+<h2>Create a RFQ<a class="headerlink" href="#create-a-rfq" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">To create RFQ you need to open the <a class="reference external" href="http://indoproc.com/esourcing/rfq">RFQ Page</a>: , and click the &#8220;Create RFQ Button&#8221;</p>
+<a class="reference internal image-reference" href="../_images/createrfqbtn.png"><img alt="Login Section" src="../_images/createrfqbtn.png" style="width: 400px;" /></a>
+</li>
+<li><p class="first">In the &#8216;Create RFQ&#8217; page, there are 3 section that you have to fill the required information:</p>
+<ul class="simple">
+<li>RFQ Detail form:</li>
+</ul>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/section1rfq.png"><img alt="Login Section" src="../_images/section1rfq.png" style="width: 800px;" /></a>
+<ul>
+<li><p class="first">RFQ title: The RFQ Title.</p>
+</li>
+<li><p class="first">Due date: The RFQ due date; a deadline for supplier to submit thair quotation.</p>
+</li>
+<li><p class="first">Delivery date: (Not necessary) the estimated time when the winner supplier have to deliver the requested items.</p>
+</li>
+<li><p class="first">Category: Choose the RFQ category</p>
+</li>
+<li><p class="first">Location: Choose the RFQ location</p>
+</li>
+<li><p class="first">Type: Choose the RFQ type:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Public RFQ: this RFQ can be accessed by public and all registered supplier can submit their quotation.</li>
+<li>Private RFQ: this RFQ can be accessed by the invited supplier only.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Description: The RFQ description.</p>
+</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>Items list:</li>
+</ul>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/section2rfq.png"><img alt="Login Section" src="../_images/section2rfq.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li>this section will show your required item(s).</li>
+<li>to add item, click the &#8216;add item&#8217; button and the add item sidebar will be showed up.</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/additem.png"><img alt="Login Section" src="../_images/additem.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li>input the detail such as Item name, item specification, quantity, uom, target price. You can also add the attachment file.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>Invited Supplier list:</li>
+</ul>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/section3rfq.png"><img alt="Login Section" src="../_images/section3rfq.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li>This section will show your invited supplier.</li>
+<li>The invited supplier will recieve the notfication email about your RFQ.</li>
+<li>If you choose Public at the RFQ type, you can leave this section blank;</li>
+<li>but if you choose Private at the RFQ type, invite the supplier is a must.</li>
+<li>To invite the supplier, click &#8216;add Supplier&#8217; button and the add supplier sidebar will be showed up.</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/addsuprfq.png"><img alt="Login Section" src="../_images/addsuprfq.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li>You can filter the suppler list by their company&#8217;s category.</li>
+<li>You can choose more than 1 supplier into your RFQ invitation.</li>
+<li>Click &#8216;Add to supplier list&#8217; button to add them.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>Click &#8216;Send&#8217; button to create your RFQ.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="view-submitted-rfq-list">
+<h2>View submitted RFQ list<a class="headerlink" href="#view-submitted-rfq-list" title="Permalink to this headline">¶</a></h2>
+<p>Public RFQ and Private RFQ list can be accesed from the RFQ menu. The RFQ List is divided into 5 tabs according to it&#8217;s current status:</p>
+<a class="reference internal image-reference" href="../_images/rfqtab.png"><img alt="Login Section" src="../_images/rfqtab.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>All : No filter, this tab will show all of your submited RFQ(s).</li>
+<li>Open : This tab will show the current active RFQ(s) (Still accepting for quotation). You can still invite supplier into this RFQ or do an update.</li>
+<li>Closed : This tab will show the RFQ(s) that exceeded the due date (Not accepting the quotation anymore). Client should have to decide the winner (supplier).</li>
+<li>Cancelled : This tab will show the canceled RFQ(s).</li>
+<li>Completed : This tab will show the completed RFQ(s) (the RFQ is closed and the winner has been decided).</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/rfqfil.png"><img alt="Login Section" src="../_images/rfqfil.png" style="width: 700px;" /></a>
+<p>You can also filter this RFQ with Start Date, End Date, Title or Description, RFQ Type and Category for each RFQ list.</p>
+<a class="reference internal image-reference" href="../_images/vcrfq.png"><img alt="Login Section" src="../_images/vcrfq.png" style="width: 800px;" /></a>
+<p>To view or edit the RFQ detail, you can click the &#8220;View&#8221; button, you can also resend the invitation email to the supplier.</p>
+<p>To compare the submitted quotation(s) for a RFQ, click the &#8220;Compare&#8221; button, you can choose the winner supplier from the compare page.</p>
+</div>
+<div class="section" id="rfq-detail">
+<h2>RFQ Detail<a class="headerlink" href="#rfq-detail" title="Permalink to this headline">¶</a></h2>
+<p>In RFQ detail page you can review and edit the current active RFQ.</p>
+<p>There are 4 section in this page:</p>
+<a class="reference internal image-reference" href="../_images/detailrfq.png"><img alt="Login Section" src="../_images/detailrfq.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li>RFQ Detail, display the Overview of the RFQ, also include Charts that displays the current statistic information.</li>
+<li>Items, hidden by default, you can press the chevron icon to display the content. This section displays the items that needed in this RFQ.</li>
+<li>Quotation and invitations displays the list of submitted quotation and the list of supplier invitation.</li>
+<li>Message board, you can send message directly to all member who present in this RFQ.</li>
+</ul>
+</div>
+<div class="section" id="message-board">
+<h2>Message board<a class="headerlink" href="#message-board" title="Permalink to this headline">¶</a></h2>
+<p>Direct communication between the client and the suppler is now possible with this feature.</p>
+<a class="reference internal image-reference" href="../_images/message.png"><img alt="Login Section" src="../_images/message.png" style="width: 800px;" /></a>
+<p>To create message, just click &#8216;Post message&#8217; button, input your message and click send.</p>
+<p>Please note that your message can directly read by all members, so please makse sure you didn&#8217;t post any ci=onfidential information in this message board.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">RFQ (Request For Quotation)</a><ul>
+<li><a class="reference internal" href="#create-a-rfq">Create a RFQ</a></li>
+<li><a class="reference internal" href="#view-submitted-rfq-list">View submitted RFQ list</a></li>
+<li><a class="reference internal" href="#rfq-detail">RFQ Detail</a></li>
+<li><a class="reference internal" href="#message-board">Message board</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="supplier_list.html"
+                        title="previous chapter">Supplier List</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pin-rfq.html"
+                        title="next chapter">Pin an RFQ into Dashboard</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Client/rfq.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pin-rfq.html" title="Pin an RFQ into Dashboard"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="supplier_list.html" title="Supplier List"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Indoproc Dev Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

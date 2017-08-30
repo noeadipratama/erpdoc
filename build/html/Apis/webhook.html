@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Webhooks &#8212; eSourcing 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="List of Quotation by RFQ ID" href="quotation.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="quotation.html" title="List of Quotation by RFQ ID"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="webhooks">
+<h1>Webhooks<a class="headerlink" href="#webhooks" title="Permalink to this headline">¶</a></h1>
+<p>Webhooks allow external services to be notified when certain happen within your eSourcing account. When the specified events happen, we&#8217;ll send a POST request to each URLs you provide.</p>
+<div class="section" id="open-webhook-page">
+<h2>Open webhook Page<a class="headerlink" href="#open-webhook-page" title="Permalink to this headline">¶</a></h2>
+<p>To access webhook page, go to the menu - click Settings and choose API.</p>
+<a class="reference internal image-reference" href="../_images/wh1.png"><img alt="role select" src="../_images/wh1.png" style="width: 179px;" /></a>
+<p>After API page has been opened, click the Webhooks tab.</p>
+<a class="reference internal image-reference" href="../_images/wh2.png"><img alt="role select" src="../_images/wh2.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="webhooks-list">
+<h2>Webhooks List<a class="headerlink" href="#webhooks-list" title="Permalink to this headline">¶</a></h2>
+<p>Webhooks list will be showed on the webhook tab</p>
+<a class="reference internal image-reference" href="../_images/wh3.png"><img alt="role select" src="../_images/wh3.png" style="width: 700px;" /></a>
+<p>the webhook list contains the webhook URLs, the trigger events, edit and delete button for each webhook.</p>
+<div class="section" id="add-webhook">
+<h3>Add Webhook<a class="headerlink" href="#add-webhook" title="Permalink to this headline">¶</a></h3>
+<p>To add a new webhook, click the &#8216;Add Webhook&#8217; button inthe bottom and the form will be appeared:</p>
+<a class="reference internal image-reference" href="../_images/wh4.png"><img alt="role select" src="../_images/wh4.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>Payload URL - Choose the HTTP type (<a class="reference external" href="HTTP://">HTTP://</a> or <a class="reference external" href="HTTPS://">HTTPS://</a>), and input the URL</li>
+<li>trigger events - Choose the events that you like trigger the webhook.</li>
+<li>Click Add Webhook button to add webhook or click Cancel button to discard the form.</li>
+</ul>
+</div>
+<div class="section" id="edit-webhook">
+<h3>Edit Webhook<a class="headerlink" href="#edit-webhook" title="Permalink to this headline">¶</a></h3>
+<p>To make any changes to current webhook, click the &#8216;Edit&#8217; button inthe bottom and the form will be appeared:</p>
+<a class="reference internal image-reference" href="../_images/wh5.png"><img alt="role select" src="../_images/wh5.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>Payload URL - Choose the HTTP type (<a class="reference external" href="HTTP://">HTTP://</a> or <a class="reference external" href="HTTPS://">HTTPS://</a>), and input the URL</li>
+<li>trigger events - Choose the events that you like trigger the webhook.</li>
+<li>Click Update Webhook button to save or click Cancel button to discard any changes.</li>
+</ul>
+</div>
+<div class="section" id="delete-webhook">
+<h3>Delete Webhook<a class="headerlink" href="#delete-webhook" title="Permalink to this headline">¶</a></h3>
+<p>To delete current webhook, click the &#8216;Delete&#8217; button, and the confirmation popup will be appear.</p>
+<a class="reference internal image-reference" href="../_images/wh6.png"><img alt="role select" src="../_images/wh6.png" style="width: 600px;" /></a>
+<p>Click OK to continue; please note that delete webhook cannot be undone and will be premanently removed.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Webhooks</a><ul>
+<li><a class="reference internal" href="#open-webhook-page">Open webhook Page</a></li>
+<li><a class="reference internal" href="#webhooks-list">Webhooks List</a><ul>
+<li><a class="reference internal" href="#add-webhook">Add Webhook</a></li>
+<li><a class="reference internal" href="#edit-webhook">Edit Webhook</a></li>
+<li><a class="reference internal" href="#delete-webhook">Delete Webhook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="quotation.html"
+                        title="previous chapter">List of Quotation by RFQ ID</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Apis/webhook.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="quotation.html" title="List of Quotation by RFQ ID"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">eSourcing 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Indoproc Dev Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

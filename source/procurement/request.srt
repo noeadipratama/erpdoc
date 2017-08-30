@@ -1,7 +1,0 @@
-LOGIN
------
-
-sub judul
-=========
-
-test

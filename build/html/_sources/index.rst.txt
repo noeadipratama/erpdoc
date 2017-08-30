@@ -10,6 +10,7 @@ Welcome to erpDoc's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   procurement/request
 
 
 Indices and tables

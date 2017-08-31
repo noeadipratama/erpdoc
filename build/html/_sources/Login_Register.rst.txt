@@ -6,13 +6,17 @@ Login & Register
 Login
 -----
 
-Jika Anda sudah memiliki akun, Anda dapat masuk ke aplikasi web dari Laman Masuk <http://indoproc.com/esourcing/sign/login> `_:
+.. image:: img_src/login.png
+    :width: 550px
+    :alt: Login Section
+
+Jika Anda sudah memiliki akun, Anda dapat masuk ke aplikasi web dari `Laman Masuk <http://indoproc.com/esourcing/sign/login> `_:
 
 - masukan email dan kata sandi anda yang terdaftar
 
-	.. image:: img_src/login.png
-    :width: 550px
-    :alt: Login Section
+  .. image:: img_src/login.png
+    :width: 500px
+    :alt: Input Email and Password
 
 - klik tombol 'login'
   

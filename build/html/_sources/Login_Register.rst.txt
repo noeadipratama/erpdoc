@@ -6,16 +6,12 @@ Login & Register
 Login
 -----
 
-.. image:: img_src/login.png
-    :width: 550px
-    :alt: Login Section
-
-Jika Anda sudah memiliki akun, Anda dapat masuk ke aplikasi web dari `Laman Masuk <http://indoproc.com/esourcing/sign/login> `_:
+Jika Anda sudah memiliki akun, Anda dapat masuk ke aplikasi web dari Laman Masuk :
 
 - masukan email dan kata sandi anda yang terdaftar
 
   .. image:: img_src/login.png
-    :width: 500px
+    :width: 400px
     :alt: Input Email and Password
 
 - klik tombol 'login'
@@ -23,10 +19,10 @@ Jika Anda sudah memiliki akun, Anda dapat masuk ke aplikasi web dari `Laman Masu
 Register
 --------
 
-If you don't have an account, you can create a new one from this `link <http://indoproc.com/esourcing/register>`_ or click 'Sign Up' button from the login page.
+Jika Anda tidak mempunyai akun, Anda dapat membuat yang baru dari tombol `link Daftar Sekarang` dari halaman login.
 
 .. image:: img_src/btnsign_ss.png
-  :width: 550px
+  :width: 400px
   :alt: Sign Up Button
 
 For start your registration, please follow these instructions below:

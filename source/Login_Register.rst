@@ -21,13 +21,13 @@ Register
 
 Jika Anda tidak mempunyai akun, Anda dapat membuat yang baru dari tombol `link Daftar Sekarang` dari halaman login.
 
-.. image:: img_src/btnsign_ss.png
+.. image:: img_src/link_register.png
   :width: 400px
   :alt: Sign Up Button
 
-For start your registration, please follow these instructions below:
+Untuk memulai pendaftaran Anda, ikuti petunjuk di bawah ini:
 
-- Input all the required data
+- Masukkan semua data yang dibutuhkan
 
   .. image:: img_src/register_1.png
     :width: 550px

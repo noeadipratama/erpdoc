@@ -6,7 +6,7 @@ Login & Register
 Login123
 -----
 
-.. image:: img_src/login_ss.png
+.. image:: img_src/login.png
     :width: 550px
     :alt: Login Section
 

@@ -73,7 +73,7 @@ For start your registration, please follow these instructions below:
 
 - Input all the required data
 
-  .. image:: img_src/registerform_ss.png
+  .. image:: img_src/register_1.png
     :width: 550px
     :alt: Sign Up Button
 

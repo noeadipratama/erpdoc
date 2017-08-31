@@ -3,7 +3,7 @@ Login & Register
 
 .. _login_instructions:
 
-Login
+Login123
 -----
 
 .. image:: img_src/login_ss.png

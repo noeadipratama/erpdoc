@@ -3,7 +3,7 @@ Login & Register
 
 .. _login_instructions:
 
-Login123
+Login
 -----
 
 .. image:: img_src/login.png
@@ -20,45 +20,6 @@ If you already have an account, you can login into eSourcing web-app from the `L
     :alt: Input Email and Password
 
 - click 'login' button
-
-Forgot Password
----------------
-
-If you forgot the password you use to sign in to Indoproc eSourcing, you might need to reset it.
-
-- First, check to make sure that Caps Lock isn't on, because passwords are case-sensitive.
-- To reset password, please follow these instructions below:
- 
- - At `Login Page <http://indoproc.com/esourcing/sign/login>`_:
- 
-  - Click the 'Forgot Password' link
-  - Input your registered email into the appeared 'forgot password' sidebar
-
-  .. image:: img_src/forgot_ss.png
-    :width: 500px
-    :alt: Forgot Password Sidebar
-
-  - Click Submit button and the 'reset password' link will be sent to your email
-
- - Reset Password:
-
-  - Check your email inbox; if you couldn't find the email, please check your spam/junk folder
-  - Click the 'reset password' link and you'll be redirected to 'reset password' page
-  
-  .. image:: img_src/resetemail_ss.png
-    :width: 500px
-    :alt: Reset Password Link
-  
-  
-  - Input your new password and your confirmation password
-    
-  .. image:: img_src/resetpass.png
-    :width: 500px
-    :alt: Reset Password Page
-  
-  
-  - Click change password
-  - Now you can login with your new password
   
 Register
 --------

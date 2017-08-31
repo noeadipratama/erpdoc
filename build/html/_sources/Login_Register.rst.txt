@@ -77,6 +77,14 @@ For start your registration, please follow these instructions below:
     :width: 550px
     :alt: Sign Up Button
 
+  .. image:: img_src/register_2.png
+    :width: 550px
+    :alt: Sign Up Button
+
+  .. image:: img_src/register_3.png
+    :width: 550px
+    :alt: Sign Up Button
+
 - Choose Your Role:
 
   .. image:: img_src/role_ss.png

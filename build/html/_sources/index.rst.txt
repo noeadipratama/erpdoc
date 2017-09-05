@@ -12,18 +12,6 @@ Welcome to eSourcing's documentation!
    
    Login_Register
 
-.. _master-documentation:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Master Documentation
-   
-   Master/getting_started
-   Master/level_list
-   Master/department_list
-   Client/rfq
-
-
 .. _client-documentation:
 
 .. toctree::
@@ -54,7 +42,7 @@ Welcome to eSourcing's documentation!
    :caption: API Documentation
 	
    Apis/api
-   Apis/rfq_status
+   Apis/api_integration
    Apis/rfq_detail
    Apis/rfq_post
    Apis/rfq_put

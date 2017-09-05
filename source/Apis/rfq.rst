@@ -1,14 +1,11 @@
-List all RFQ List
+Mendapatkan Access Token dari E-Sourcing
 =================
 
-To list all of the RFQ on your account send a :py:class:`GET` request to :py:class:`/v1/rfqs`.
+Untuk mendapatkan Access Token pertama kali silakan akses menu API di menu Setting
 
-CURL EXAMPLE
+AKSES MENU API
 
-.. code-block:: js
-   :linenos:
-
-   curl -X GET -H "Content-Type: application/application/x-www-form-urlencoded" -H "Authorization: Bearer 12d3ee8b78ea8d4d09175ebf65c25584d7b269b2" "http://indoproc.com/esourcing/v1/rfqs/"
+.. image:: ../img_src/234.png
  
 REQUEST HEADERS
 

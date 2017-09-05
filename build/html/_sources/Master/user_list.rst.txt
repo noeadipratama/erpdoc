@@ -16,7 +16,7 @@ Anda dapat menambahkan daftar department Anda sendiri ke situs web. Untuk menamb
 - Ada daftar department yang akan ditampilkan di halaman ini. Ini akan menunjukkan options, nama department, active dari department tersebut.
 - Anda juga bisa menyortir department dengan nama department atau active menurut abjad.
 
-Create New User
+Create New Department
 -------------------
 
  .. image:: ../img_src/department_add_button.png
@@ -25,7 +25,7 @@ Create New User
 
  - Klik tombol "Add Department" di kiri atas halaman ini.
  
- .. image:: ../img_src/user_add.png
+ .. image:: ../img_src/department_add.png
     :width: 400px
     :alt: Login Section
  

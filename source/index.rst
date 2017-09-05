@@ -41,7 +41,7 @@ Welcome to eSourcing's documentation!
    :maxdepth: 2
    :caption: API Documentation
 	
-   Apis/rfq
+   Apis/api
    Apis/rfq_status
    Apis/rfq_detail
    Apis/rfq_post

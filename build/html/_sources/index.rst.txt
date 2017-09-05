@@ -12,6 +12,18 @@ Welcome to eSourcing's documentation!
    
    Login_Register
 
+.. _master-documentation:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Master Documentation
+   
+   Master/getting_started
+   Master/level_list
+   Master/department_list
+   Client/rfq
+
+
 .. _client-documentation:
 
 .. toctree::

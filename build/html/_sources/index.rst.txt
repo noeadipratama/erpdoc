@@ -12,6 +12,7 @@ Welcome to eSourcing's documentation!
    
    Login_Register
 
+
 .. _master-documentation:
 
 .. toctree::
@@ -28,7 +29,6 @@ Welcome to eSourcing's documentation!
    Master/budget_list
    Master/purchase_list
    Client/rfq
-
 
 .. _client-documentation:
 
@@ -59,8 +59,8 @@ Welcome to eSourcing's documentation!
    :maxdepth: 2
    :caption: API Documentation
 	
-   Apis/rfq
-   Apis/rfq_status
+   Apis/api
+   Apis/api_integration
    Apis/rfq_detail
    Apis/rfq_post
    Apis/rfq_put

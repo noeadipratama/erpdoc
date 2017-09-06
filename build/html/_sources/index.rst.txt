@@ -21,6 +21,12 @@ Welcome to eSourcing's documentation!
    Master/getting_started
    Master/level_list
    Master/department_list
+   Master/client_list
+   Master/warehouse_list
+   Master/supplier_list
+   Master/location_list
+   Master/budget_list
+   Master/purchase_list
    Client/rfq
 
 

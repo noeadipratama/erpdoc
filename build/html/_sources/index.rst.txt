@@ -35,6 +35,7 @@ Welcome to eSourcing's documentation!
    Inventory/delivery_complete_list
    Inventory/stock_list
 
+
 .. _master-documentation:
 
 .. toctree::
@@ -44,6 +45,7 @@ Welcome to eSourcing's documentation!
    Master/getting_started
    Master/level_list
    Master/department_list
+<<<<<<< HEAD
    Master/user_list
    Master/threshold_list
    Master/uom_list
@@ -62,6 +64,16 @@ Welcome to eSourcing's documentation!
    Report/report_inbound_list
    Report/report_sales_list
    
+=======
+   Master/client_list
+   Master/warehouse_list
+   Master/supplier_list
+   Master/location_list
+   Master/budget_list
+   Master/purchase_list
+   Client/rfq
+
+>>>>>>> e44b9eae2c20cebbd8ca617ec15e75ab0a5ebe2b
 .. _client-documentation:
 
 .. toctree::
@@ -91,8 +103,8 @@ Welcome to eSourcing's documentation!
    :maxdepth: 2
    :caption: API Documentation
 	
-   Apis/rfq
-   Apis/rfq_status
+   Apis/api
+   Apis/api_integration
    Apis/rfq_detail
    Apis/rfq_post
    Apis/rfq_put

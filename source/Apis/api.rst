@@ -3,11 +3,21 @@ Mendapatkan Access Token dari E-Sourcing
 
 Untuk mendapatkan Access Token pertama kali silakan akses menu API di menu Setting
 
-AKSES MENU API
+AKSES MENU API 
 
 .. image:: ../img_src/234.png
  
-REQUEST HEADERS
+Kemudian akan terbuka halaman berikut
+
+.. image:: ../img_src/237.png
+
+asdf
+
+.. image:: ../img_src/236.png
+
+asdf
+
+.. image:: ../img_src/238.png
 
 .. code-block:: js
    :linenos:

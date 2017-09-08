@@ -28,6 +28,7 @@ Welcome to eSourcing's documentation!
    Master/location_list
    Master/budget_list
    Master/purchase_list
+   Master/request_list
    Client/rfq
 
 .. _client-documentation:

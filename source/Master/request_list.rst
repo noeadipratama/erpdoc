@@ -91,7 +91,7 @@ Request Approval
      :width: 400px
      :alt: Login Section
 	 
-Request Status
+Request Status 
 -------------------
 
  .. image:: ../img_src/request_status.png
@@ -106,7 +106,7 @@ Request Status
 	 
  - klik tombol "detail" untuk melihat detail dari request sesuai dengan baris yang Anda pilih.
  
- .. image:: ../img_src/request_approval_detail.png 
+ .. image:: ../img_src/request_approval_detail.png  
      :width: 400px
      :alt: Login Section
 

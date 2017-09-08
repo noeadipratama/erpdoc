@@ -1,9 +1,9 @@
-.. eSourcing documentation master file, created by
+.. iStok documentation master file, created by
    sphinx-quickstart on Wed Apr 12 13:44:50 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to eSourcing's documentation!
+Welcome to iStok documentation!
 =====================================
 
 .. toctree::
@@ -69,62 +69,6 @@ Welcome to eSourcing's documentation!
    Report/report_order_list
    Report/report_inbound_list
    Report/report_sales_list
-<<<<<<< HEAD
-=======
-   
-=======
-   Master/client_list
-   Master/warehouse_list
-   Master/supplier_list
-   Master/location_list
-   Master/budget_list
-   Master/purchase_list
-   Master/request_list
-   Client/rfq
-
->>>>>>> e44b9eae2c20cebbd8ca617ec15e75ab0a5ebe2b
-.. _client-documentation:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Client Documentation
-   
-   Client/getting_started
-   Client/supplier_list
-   Client/rfq
-   Client/pin-rfq.rst
-   
-.. _supplier-documentation:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Supplier Documentation
-   
-   Supplier/getting_started
-   Supplier/public_rfq
-   Supplier/public_rfq_join
-   Supplier/private_rfq_join
-   Supplier/public_rfq_status
-
-.. _apis-documentation:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Documentation
-	
-   Apis/api
-   Apis/api_integration
-   Apis/rfq_detail
-   Apis/rfq_post
-   Apis/rfq_put
-   Apis/vendor
-   Apis/vendor_category
-   Apis/vendor_detail
-   Apis/vendor_post
-   Apis/vendor_put
-   Apis/quotation
-   Apis/webhook.rst
->>>>>>> 490e6e57b0c2e7b3d747360b9839392cc4ab78f5
 
 Indices and tables
 ==================

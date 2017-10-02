@@ -6,96 +6,50 @@ Login & Register
 Login
 -----
 
-.. image:: img_src/login_ss.png
-    :width: 550px
-    :alt: Login Section
+Jika Anda sudah memiliki akun, Anda dapat masuk ke aplikasi web dari Laman Masuk :
 
-	
-If you already have an account, you can login into eSourcing web-app from the `Login Page <http://indoproc.com/esourcing/sign/login>`_:
+- masukan email dan kata sandi anda yang terdaftar
 
-- input your registered email and Password
-
-  .. image:: img_src/userpass_ss.png
-    :width: 500px
+  .. image:: img_src/login.png
+    :width: 400px
     :alt: Input Email and Password
 
-- click 'login' button
-
-Forgot Password
----------------
-
-If you forgot the password you use to sign in to Indoproc eSourcing, you might need to reset it.
-
-- First, check to make sure that Caps Lock isn't on, because passwords are case-sensitive.
-- To reset password, please follow these instructions below:
- 
- - At `Login Page <http://indoproc.com/esourcing/sign/login>`_:
- 
-  - Click the 'Forgot Password' link
-  - Input your registered email into the appeared 'forgot password' sidebar
-
-  .. image:: img_src/forgot_ss.png
-    :width: 500px
-    :alt: Forgot Password Sidebar
-
-  - Click Submit button and the 'reset password' link will be sent to your email
-
- - Reset Password:
-
-  - Check your email inbox; if you couldn't find the email, please check your spam/junk folder
-  - Click the 'reset password' link and you'll be redirected to 'reset password' page
-  
-  .. image:: img_src/resetemail_ss.png
-    :width: 500px
-    :alt: Reset Password Link
-  
-  
-  - Input your new password and your confirmation password
-    
-  .. image:: img_src/resetpass.png
-    :width: 500px
-    :alt: Reset Password Page
-  
-  
-  - Click change password
-  - Now you can login with your new password
+- klik tombol 'login'
   
 Register
 --------
 
-If you don't have an account, you can create a new one from this `link <http://indoproc.com/esourcing/register>`_ or click 'Sign Up' button from the login page.
+Jika Anda tidak mempunyai akun, Anda dapat membuat yang baru dari tombol `link Daftar Sekarang` dari halaman login.
 
-.. image:: img_src/btnsign_ss.png
-  :width: 550px
+.. image:: img_src/link_register.png
+  :width: 400px
   :alt: Sign Up Button
 
-For start your registration, please follow these instructions below:
+Untuk memulai pendaftaran Anda, ikuti petunjuk di bawah ini:
 
-- Input all the required data
+- Masukkan semua data yang dibutuhkan
 
-  .. image:: img_src/registerform_ss.png
-    :width: 550px
+  .. image:: img_src/register_1.png
+    :width: 400px
     :alt: Sign Up Button
 
-- Choose Your Role:
+  .. image:: img_src/register_2.png
+    :width: 400px
+    :alt: Sign Up Button
 
-  .. image:: img_src/role_ss.png
-    :width: 550px
-    :alt: role select
+  .. image:: img_src/register_3.png
+    :width: 400px
+    :alt: Sign Up Button
  
- - Check 'Client': if your company want to create the RFQ and get the quotation from supplier
- - Check 'Supplier': If your company want to submit quotation in response to published RFQ that created by 'client' Companies
- - You can also check both of 'Client' and 'Supplier'
- 
-- click 'Sign Up' button and the 'activation' link will be sent to your email
+- klik tombol 'Submit' dan link 'aktivasi' akan dikirim ke email Anda
 
-Activate your account:
+Aktivasi akun anda:
 
-  - Check your email inbox; if you couldn't find the email, please check your spam/junk folder
-  - Click 'Activate account' button and you'll be redirected to welcome page
+  - Periksa inbox email anda; Jika Anda tidak dapat menemukan emailnya, periksa folder spam / sampah Anda
+  - Klik tombol 'Aktifkan Akun' dan Anda akan diarahkan untuk menyambut halaman
   
     .. image:: img_src/active_ss.png
         :width: 550px
         :alt: Activation Email
   
-  - To start login you can follow the :ref:`Login Instructions <login_instructions>` above.
+  - Untuk memulai login anda bisa mengikuti Login Petunjuk diatas.
